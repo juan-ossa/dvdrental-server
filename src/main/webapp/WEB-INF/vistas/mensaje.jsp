@@ -7,7 +7,8 @@
         <a href=""> home</a> <br>
         <a href="api/actor"> actores</a><br>
         <a href="api/actor/1">  actor 1</a><br>
-        <a href="hola?name=Juan">Saludo</a><br>
+        <a href="hola?name=Juan">hola</a><br>
+        <a href="greeting">Saludo</a><br>
 
 
         <br>

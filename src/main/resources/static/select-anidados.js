@@ -8,7 +8,8 @@ selectSecondary = d.getElementById("select-secondary");
 let area = d.getElementById("area");
 let paginas;
 function loadStates() {
-    fetch("http://localhost:8080/api/books")
+//    fetch("http://localhost:8080/api/books")
+    fetch("api/books")
             .then(res => res.ok ? res.json() : Promise.reject(res))
             .then(json => {
                 console.log(json);
@@ -30,7 +31,7 @@ function loadStates() {
 function loadPages(libro) {
 
     console.log(`${libro}`);
-    fetch(`http://localhost:8080/api/book/${libro}`)
+    fetch(`api/book/${libro}`)
             .then(res => res.ok ? res.json() : Promise.reject(res))
             .then(json => {
                 // console.log(json.pages);
